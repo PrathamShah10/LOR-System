@@ -347,15 +347,14 @@ app.get('/studentfile', (req,res)=> {
 })
 app.post("/studentfile", upload.single("file"), (req, res) => {
     console.log(req.file);
-    res.send("Single FIle upload success");
+    res.send("File uploaded");
   });
   app.get('/teacherfile', (req,res)=> {
     res.sendFile(__dirname+'/teacherfile.html')
 })
 app.post("/teacherfile", upload.single("file"), (req, res) => {
-    console.log(req.file);
-    res.send("Single FIle upload success");
-  });
+    res.send("File uploaded");
+});
 app.post('/login', (req, res) => {
     const currusername = req.body.username;
     const currpassword = req.body.password;
@@ -451,6 +450,7 @@ app.post('/login', (req, res) => {
                                         teacher1: dataT.Name,
                                         records: datastu,
                                     });
+                                    
                                 })
                                 var d = new Date();
                                 app.post('/student_req', (req, res) => {
@@ -465,7 +465,8 @@ app.post('/login', (req, res) => {
                                     });
                                     myDataaT.save()
                                         .then(() => {
-                                            console.log("where");
+                                            // console.log("where");
+                                            // Studetails.deleteOne({})
                                             res.sendFile(__dirname + '/check2.html');
                                         })
                                         .catch(() => {
