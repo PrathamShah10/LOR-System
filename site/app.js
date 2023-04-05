@@ -13,7 +13,7 @@ app.use('/uploads',express.static('uploads'));
 app.use(bodyParser.json())
 var mongoose = require("mongoose");
 const { resolveSoa } = require("dns");
-mongoose.connect("mongodb://localhost:27017/trying", {
+mongoose.connect('mongodb+srv://padamadansamuel:PK6yOC82HLzgUNgX@cluster0.vwtqnck.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
