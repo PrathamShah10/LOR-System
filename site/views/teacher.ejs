@@ -330,7 +330,6 @@
                     <th>ROLL NO</th>
                     <th>DATE</th>
                     <th>message</th>
-                    <th>File</th>
                 </tr>
             </thead>
             <tbody>
@@ -354,9 +353,11 @@
                         <td >
                             <%= stu.message %>
                         </td>
+                        <!-- <h1>
                         <td>
                             <a href="uploads/<%= stu.rollno %>.pdf" download="newfile">FileLink</a>
                         </td>
+                    </h1> -->
                     </tr>
 
                     <% }) %>

@@ -226,8 +226,8 @@
         <div class="super-content">
             <div class="To">
                 <select id="stu-Details" name="Name">
-                    <% records.forEach(function(stu,index) {%>
-                    <option value="<%= stu.Name %>" > <%= stu.Name %> </option>
+                    <% records.forEach(function(stu,index){%>
+                    <option value="<%= stu.Name %>" ><%= stu.Name %> </option>
                     <% }) %>
                 </select>
                 <select id="stu-Details" name="rollno">
@@ -243,9 +243,9 @@
                 <input type="submit" id="submit" class="btn" value="Submit">
             </div>
         </div>
-        <div>
+        <!-- <div>
             <input type="File" name="messagee">
-        </div>
+        </div> -->
     </form>
 
     <!-- put content here -->

@@ -298,8 +298,8 @@ table th{
                     <th>NAME</th>
                     <th>Message</th>
                     <th>DATE</th>
-                    <th>File requested</th>
-                    <th>File Uploaded</th>
+                    <!-- <th>File requested</th>
+                    <th>File Uploaded</th> -->
                
                 
             </thead>
@@ -319,12 +319,12 @@ table th{
                         <td>
                             <%= stu.date + "/" + (++stu.month) + "/" + stu.dateyear %>
                         </td>
-                        <td>
+                        <!-- <td>
                             <a href="uploads/<%= stu.rollno %>.pdf" download="newfile">FileLink</a>
                         </td>
                         <td>
                             <a href="uploads/t<%= stu.rollno %>.pdf" download="newfile">FileLink</a>
-                        </td>
+                        </td> -->
                     </tr>
 
                     <% }) %>
